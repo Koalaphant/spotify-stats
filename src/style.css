@@ -18,6 +18,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -28,11 +29,61 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  flex-direction: column;
+  background-color: #242424;
+  color: white;
+  font-size: 1.2rem;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  text-align: center;
+  color: #ffffff;
+}
+
+#profile,
+#topTracks {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+}
+
+#profile h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+#avatar img {
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+}
+
+#topTracks {
+  margin-top: 2rem;
+}
+
+.track {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  color: white;
+}
+
+.track img {
+  margin-right: 1rem;
+  border-radius: 8px;
+}
+
+.track p {
+  font-size: 1rem;
 }
 
 button {
@@ -45,10 +96,14 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  color: #fff;
+  margin-top: 1rem;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -59,9 +114,11 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }

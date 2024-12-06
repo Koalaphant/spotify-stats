@@ -1,13 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>Spotify Profile Viewer</title>
+    <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <h1>Spotify Profile Viewer</h1>
+
+    <section id="profile">
+      <h2>Welcome, <span id="displayName"></span></h2>
+      <div id="avatar"></div>
+    </section>
+
+    <section id="topTracks">
+      <h2>Your Top Tracks</h2>
+    </section>
+
+    <script type="module" src="/src/script.js"></script>
   </body>
 </html>
